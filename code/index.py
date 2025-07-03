@@ -1,4 +1,4 @@
-print('Bem-vindes à madereira de Beatriz Avelar')
+print('Bem-vindos à madereira de Beatriz Avelar')
 
 print('PIN - Pinho')
 print('PER - Peroba')
@@ -7,7 +7,7 @@ print('IPE - Ipê')
 print('IMB - Imbuia')
 
 
-def escolha_tipo():
+def escolha_tipo(): 
   while True:
     tipo = input('Digite as letras indicadas acima para o tipo de madeira desejada: ')
 
@@ -48,7 +48,7 @@ def qtd_toras():
     return quantidade, desconto
 
 
-def frete():
+def frete(): 
   while True:
     print('Qual tipo de entrega deseja?')
     print('Digite 1 para transporte rodoviário')
@@ -72,4 +72,6 @@ quantidade, desconto = qtd_toras()
 frete = frete()
 
 total = ((tipo * quantidade) * (1-desconto)) + frete
-print(f'O valor total do pedido é de R${total}')
+print(f'Valor de {quantidade} unidades = {tipo * quantidade}')
+print(f'Valor do frete = {frete}')
+print(f'O valor total do pedido com desconto + frete = R${total}')
